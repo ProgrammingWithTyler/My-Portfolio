@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
+import { SkillsPageData } from '../skills/skills-page-data.interface';
+import { SkillsService } from '../skills/skills.service';
 import { HomePageData } from './home-page-data.interface';
 import { HomePageService } from './home-page.service';
 
@@ -9,22 +11,17 @@ import { HomePageService } from './home-page.service';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
-export class HomePageComponent implements OnInit, OnDestroy {
+export class HomePageComponent implements OnInit {
   obj: HomePageData;
-  subscription$: Subscription;
+  obs$: Observable<HomePageData>;
+  relevantSkills$: Observable<SkillsPageData[]>;
 
-  constructor(private http: HttpClient, private service: HomePageService) {}
+  constructor(private homePageService: HomePageService, private skillsPageService: SkillsService) { }
 
   ngOnInit(): void {
-    this.subscription$ = this.service.getHomePageData().subscribe((data) => {
-      if (data) {
-        this.obj = data;
-      }
-    });
+    this.obs$ = this.homePageService.getHomePageData();
+    this.relevantSkills$ = this.skillsPageService.getMostRelevantSkills();
   }
 
-  ngOnDestroy(): void {
-    this.subscription$.unsubscribe();
-  }
 }
 

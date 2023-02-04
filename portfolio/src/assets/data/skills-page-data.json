@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Angular",
+    "imageSvg": "../assets/images/angular.svg",
+    "isRelevant": true,
+    "type": "framework"
+  },
+  {
+    "title": "Blazor",
+    "imageSvg": "../assets/images/blazor.svg",
+    "isRelevant": true,
+    "type": "framework"
+  },
+  {
+    "title": "TypeScript",
+    "imageSvg": "../assets/images/typescript.svg",
+    "isRelevant": true,
+    "type": "language"
+  },
+  {
+    "title": "PL/SQL",
+    "imageSvg": "../assets/images/plsql.svg",
+    "isRelevant": true,
+    "type": "language"
+  },
+  {
+    "title": "C#",
+    "imageSvg": "../assets/images/csharp.svg",
+    "isRelevant": true,
+    "type": "language"
+  },
+  {
+    "title": "Oracle Application Express",
+    "imageSvg": "../assets/images/apex.svg",
+    "isRelevant": false,
+    "type": "framework"
+  },
+  {
+    "title": ".NET Core",
+    "imageSvg": "../assets/images/dotnet-core.svg",
+    "isRelevant": true,
+    "type": "framework"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSvg": "../assets/images/bootstrap-5.svg",
+    "isRelevant": false,
+    "type": "framework"
+  },
+  {
+    "title": "Draw.io",
+    "imageSvg": "../assets/images/draw-io.svg",
+    "isRelevant": false,
+    "type": "tool"
+  }
+]
