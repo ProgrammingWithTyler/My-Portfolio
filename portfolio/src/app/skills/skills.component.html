@@ -1,26 +1,15 @@
-<section>
-  <div *ngIf="relevantSkills$ | async as obj">
-    <h1 class="text-5xl font-bold py-3 lg:px-16">My Skills</h1>
-    <h2 class="text-3xl font-bold py-3 lg:px-24">Most Relevant Skills</h2>
-    <div class="lg:grid grid-cols-7 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-32">
-      <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
-        <div class="card-body">
-          <h2 class="card-title">{{ item.title }}</h2>
-          <div class="flex justify-center">
-            <img [src]="item.imageSvg" [alt]="item.title" aria-label="Most relevant skills image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<section class="pb-14">
+  <h1 class="text-5xl font-bold py-3 lg:px-16">My Skills</h1>
 
   <div *ngIf="progLang$ | async as obj">
     <h2 class="text-3xl font-bold py-3 lg:px-24">Programming Languages</h2>
     <div class="lg:grid grid-cols-7 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-32">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">
-          <h2 class="card-title">{{ item.title }}</h2>
+          <h2 class="card-title">{{ item.title }}
+            <img *ngIf="item.isRelevant" src="../assets/images/star.png" alt="Relevant star" width="20" height="20"
+              aria-label="Relevant skills star image">
+          </h2>
           <div class="flex justify-center">
             <img [src]="item.imageSvg" [alt]="item.title" aria-label="Programming Language skills image">
           </div>
@@ -34,7 +23,10 @@
     <div class="lg:grid grid-cols-7 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-32">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">
-          <h2 class="card-title">{{ item.title }}</h2>
+          <h2 class="card-title">{{ item.title }}
+            <img *ngIf="item.isRelevant" src="../assets/images/star.png" alt="Relevant star" width="20" height="20"
+              aria-label="Relevant skills star image">
+          </h2>
           <div class="flex justify-center">
             <img [src]="item.imageSvg" [alt]="item.title" aria-label="Framework skills image">
           </div>
@@ -57,5 +49,4 @@
       </div>
     </div>
   </div>
-
 </section>

@@ -52,5 +52,59 @@
     "imageSvg": "../assets/images/draw-io.svg",
     "isRelevant": false,
     "type": "tool"
+  },
+  {
+    "title": "Jira",
+    "imageSvg": "../assets/images/jira.svg",
+    "isRelevant": false,
+    "type": "tool"
+  },
+  {
+    "title": "jQuery",
+    "imageSvg": "../assets/images/jquery.svg",
+    "isRelevant": false,
+    "type": "framework"
+  },
+  {
+    "title": ".NET Framework",
+    "imageSvg": "../assets/images/net-framework.svg",
+    "isRelevant": false,
+    "type": "framework"
+  },
+  {
+    "title": "SQL Server",
+    "imageSvg": "../assets/images/sql-server.svg",
+    "isRelevant": false,
+    "type": "language"
+  },
+  {
+    "title": "Node.js",
+    "imageSvg": "../assets/images/nodejs.svg",
+    "isRelevant": false,
+    "type": "framework"
+  },
+  {
+    "title": "TailwindCSS",
+    "imageSvg": "../assets/images/tailwindcss.svg",
+    "isRelevant": false,
+    "type": "framework"
+  },
+  {
+    "title": "RxJS",
+    "imageSvg": "../assets/images/rxjs.svg",
+    "isRelevant": false,
+    "type": "framework"
+  },
+  {
+    "title": "MySQL",
+    "imageSvg": "../assets/images/mysql.svg",
+    "isRelevant": false,
+    "type": "language"
+  },
+  {
+    "title": "PostgreSQL",
+    "imageSvg": "../assets/images/postgresql.svg",
+    "isRelevant": false,
+    "type": "language"
   }
 ]

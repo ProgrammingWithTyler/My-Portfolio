@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HomePageService } from './home-page/home-page.service';
 import { SkillsComponent } from './skills/skills.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     SkillsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
