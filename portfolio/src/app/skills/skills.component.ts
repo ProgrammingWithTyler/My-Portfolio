@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { SkillsPageData } from './skills-page-data.interface';
-import { SkillsService } from './skills.service';
-
+import { SkillsService } from '../shared/services/skills.service';
+import { SkillsPageData } from '../shared/interfaces/skills-page-data.interface';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',

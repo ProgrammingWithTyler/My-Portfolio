@@ -1,10 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
-import { SkillsPageData } from '../skills/skills-page-data.interface';
-import { SkillsService } from '../skills/skills.service';
-import { HomePageData } from './home-page-data.interface';
-import { HomePageService } from './home-page.service';
+import { SkillsPageData } from '../shared/interfaces/skills-page-data.interface';
+import { SkillsService } from '../shared/services/skills.service';
+import { HomePageData } from '../shared/interfaces/home-page-data.interface';
+import { HomePageService } from '../shared/services/home-page.service';
 
 @Component({
   selector: 'app-home-page',

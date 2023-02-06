@@ -5,9 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { HomePageService } from './home-page/home-page.service';
 import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomePageService } from './shared/services/home-page.service';
+import { SkillsService } from './shared/services/skills.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule
   ],
   providers: [
-    HomePageService
+    HomePageService,
+    SkillsService
   ],
   bootstrap: [AppComponent]
 })

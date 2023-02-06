@@ -30,7 +30,7 @@
     "type": "language"
   },
   {
-    "title": "Oracle Application Express",
+    "title": "Oracle Apex",
     "imageSvg": "../assets/images/apex.svg",
     "isRelevant": false,
     "type": "framework"
@@ -106,5 +106,11 @@
     "imageSvg": "../assets/images/postgresql.svg",
     "isRelevant": false,
     "type": "language"
+  },
+  {
+    "title": "GitHub",
+    "imageSvg": "../assets/images/github.svg",
+    "isRelevant": false,
+    "type": "tool"
   }
 ]

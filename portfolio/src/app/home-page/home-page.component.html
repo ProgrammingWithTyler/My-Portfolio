@@ -39,7 +39,9 @@
                 <h2 class="card-title">Angular Note Taking App</h2>
                 <p>A note-taking app that allows users to create, edit, and delete notes.</p>
                 <div class="card-actions justify-end">
-                  <button class="btn btn-primary">See Project</button>
+                  <button class="btn btn-primary"><img class="pr-2" src="../assets/images/email.svg" alt="email">
+                    Contact me
+                  </button>
                 </div>
               </div>
             </div>
@@ -49,14 +51,16 @@
                 <h2 class="card-title">Angular Travel Itinerary App</h2>
                 <p>A travel itinerary app that helps users plan and organize their trips.</p>
                 <div class="card-actions justify-end">
-                  <button class="btn btn-primary">See Project</button>
+                  <button class="btn btn-primary">
+                    contact me <img class="pl-2" src="../assets/images/email.svg" alt="email">
+                  </button>
                 </div>
               </div>
             </div>
           </div>
 
           <div *ngIf="relevantSkills$ | async as obj">
-            <h2 class="text-4xl py-4">My Top Skills</h2>
+            <h2 class="text-4xl py-4">Most Relevant Skills</h2>
             <div class="lg:grid grid-cols-6 gap-8 gap-x-4 gap-y-4 justify-items-center">
               <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
                 <div class="card-body">
