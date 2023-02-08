@@ -25,7 +25,7 @@
   },
   {
     "title": "C#",
-    "imageSvg": "../assets/images/csharp.svg",
+    "imageSvg": "../assets/images/c-sharp.svg",
     "isRelevant": true,
     "type": "language"
   },
@@ -110,6 +110,18 @@
   {
     "title": "GitHub",
     "imageSvg": "../assets/images/github.svg",
+    "isRelevant": false,
+    "type": "tool"
+  },
+  {
+    "title": "Visual Studio Code",
+    "imageSvg": "../assets/images/vscode.svg",
+    "isRelevant": false,
+    "type": "tool"
+  },
+  {
+    "title": "Visual Studio",
+    "imageSvg": "../assets/images/visual-studio.svg",
     "isRelevant": false,
     "type": "tool"
   }

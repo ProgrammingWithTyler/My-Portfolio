@@ -9,6 +9,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageService } from './shared/services/home-page.service';
 import { SkillsService } from './shared/services/skills.service';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SkillsService } from './shared/services/skills.service';
     HomePageComponent,
     SkillsComponent,
     FooterComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
