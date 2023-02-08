@@ -15,7 +15,7 @@ export class SkillsComponent implements OnInit {
   tools$: Observable<SkillsPageData[]>;
 
 
-  constructor(private service: SkillsService) { }
+  constructor(private readonly service: SkillsService) { }
 
   ngOnInit(): void {
     this.relevantSkills$ = this.service.getMostRelevantSkills();

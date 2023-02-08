@@ -16,7 +16,7 @@ export class HomePageComponent implements OnInit {
   obs$: Observable<HomePageData>;
   relevantSkills$: Observable<SkillsPageData[]>;
 
-  constructor(private homePageService: HomePageService, private skillsPageService: SkillsService) { }
+  constructor(private readonly homePageService: HomePageService, private readonly skillsPageService: SkillsService) { }
 
   ngOnInit(): void {
     this.obs$ = this.homePageService.getHomePageData();
