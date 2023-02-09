@@ -1,5 +1,8 @@
 <section class="pb-16">
-  <h1 class="text-5xl font-bold py-3 lg:px-16">My Skills</h1>
+  <h1 class="text-5xl font-bold py-3 lg:px-16 tooltip lg:tooltip-bottom md:tooltip-right sm:tooltip-right"
+    data-tip="Assessing proficiency in areas of comfort">
+    My Skills
+  </h1>
 
   <div *ngIf="progLang$ | async as obj">
     <h2 class="text-4xl lg:text-3xl font-bold py-3 lg:px-24">Programming Languages</h2>

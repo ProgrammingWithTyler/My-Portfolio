@@ -3,4 +3,5 @@ export interface SkillsPageData {
   imageSvg: string;
   isRelevant: boolean;
   type: string;
+  rank: number;
 }

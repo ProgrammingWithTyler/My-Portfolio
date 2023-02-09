@@ -3,126 +3,154 @@
     "title": "Angular",
     "imageSvg": "../assets/images/angular.svg",
     "isRelevant": true,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 2
   },
   {
     "title": "Blazor",
     "imageSvg": "../assets/images/blazor.svg",
     "isRelevant": true,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 4
   },
   {
     "title": "TypeScript",
     "imageSvg": "../assets/images/typescript.svg",
     "isRelevant": true,
-    "type": "language"
+    "type": "languages",
+    "rank": 2
   },
   {
     "title": "PL/SQL",
     "imageSvg": "../assets/images/plsql.svg",
     "isRelevant": true,
-    "type": "language"
+    "type": "languages",
+    "rank": 1
   },
   {
     "title": "C#",
     "imageSvg": "../assets/images/c-sharp.svg",
     "isRelevant": true,
-    "type": "language"
+    "type": "languages",
+    "rank": 3
   },
   {
     "title": "Oracle Apex",
     "imageSvg": "../assets/images/apex.svg",
     "isRelevant": false,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 1
   },
   {
     "title": ".NET Core",
     "imageSvg": "../assets/images/dotnet-core.svg",
     "isRelevant": true,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 3
   },
   {
     "title": "Bootstrap",
     "imageSvg": "../assets/images/bootstrap-5.svg",
     "isRelevant": false,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 6
   },
   {
     "title": "Draw.io",
     "imageSvg": "../assets/images/draw-io.svg",
     "isRelevant": false,
-    "type": "tool"
+    "type": "tools",
+    "rank": 6
   },
   {
     "title": "Jira",
     "imageSvg": "../assets/images/jira.svg",
     "isRelevant": false,
-    "type": "tool"
+    "type": "tools",
+    "rank": 4
   },
   {
     "title": "jQuery",
     "imageSvg": "../assets/images/jquery.svg",
     "isRelevant": false,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 7
   },
   {
     "title": ".NET Framework",
     "imageSvg": "../assets/images/net-framework.svg",
     "isRelevant": false,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 5
   },
   {
     "title": "SQL Server",
     "imageSvg": "../assets/images/sql-server.svg",
     "isRelevant": false,
-    "type": "language"
+    "type": "languages",
+    "rank": 4
   },
   {
     "title": "Node.js",
     "imageSvg": "../assets/images/nodejs.svg",
     "isRelevant": false,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 9
   },
   {
     "title": "TailwindCSS",
     "imageSvg": "../assets/images/tailwindcss.svg",
     "isRelevant": false,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 10
   },
   {
     "title": "RxJS",
     "imageSvg": "../assets/images/rxjs.svg",
     "isRelevant": false,
-    "type": "framework"
+    "type": "frameworks",
+    "rank": 8
   },
   {
     "title": "MySQL",
     "imageSvg": "../assets/images/mysql.svg",
     "isRelevant": false,
-    "type": "language"
+    "type": "languages",
+    "rank": 5
   },
   {
     "title": "PostgreSQL",
     "imageSvg": "../assets/images/postgresql.svg",
     "isRelevant": false,
-    "type": "language"
+    "type": "languages",
+    "rank": 6
   },
   {
     "title": "GitHub",
     "imageSvg": "../assets/images/github.svg",
     "isRelevant": false,
-    "type": "tool"
+    "type": "tools",
+    "rank": 3
   },
   {
     "title": "Visual Studio Code",
     "imageSvg": "../assets/images/vscode.svg",
     "isRelevant": false,
-    "type": "tool"
+    "type": "tools",
+    "rank": 1
   },
   {
     "title": "Visual Studio",
     "imageSvg": "../assets/images/visual-studio.svg",
     "isRelevant": false,
-    "type": "tool"
+    "type": "tools",
+    "rank": 2
+  },
+  {
+    "title": "Chrome Devtools",
+    "imageSvg": "../assets/images/chrome-devtools.svg",
+    "isRelevant": false,
+    "type": "tools",
+    "rank": 5
   }
 ]

@@ -5,39 +5,56 @@ import { map } from 'rxjs/operators';
 import { SkillsPageData } from '../interfaces/skills-page-data.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SkillsService {
-
   url = 'assets/data/skills-page-data.json';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getMostRelevantSkills(): Observable<SkillsPageData[]> {
-    return this.http.get<SkillsPageData[]>(this.url)
+    return this.http
+      .get<SkillsPageData[]>(this.url)
       .pipe(
-        map(data => data.filter(obj => obj.isRelevant))
+        map((data) =>
+          data.filter((obj) => obj.isRelevant).sort((a, b) => a.rank - b.rank)
+        )
       );
   }
 
   getLanguagesSkills(): Observable<SkillsPageData[]> {
-    return this.http.get<SkillsPageData[]>(this.url)
+    return this.http
+      .get<SkillsPageData[]>(this.url)
       .pipe(
-        map(data => data.filter(obj => obj.type === 'language'))
+        map((data) =>
+          data
+            .filter((obj) => obj.type === 'languages')
+            .sort((a, b) => a.rank - b.rank)
+        )
       );
   }
 
   getLFrameworkSkills(): Observable<SkillsPageData[]> {
-    return this.http.get<SkillsPageData[]>(this.url)
+    return this.http
+      .get<SkillsPageData[]>(this.url)
       .pipe(
-        map(data => data.filter(obj => obj.type === 'framework'))
+        map((data) =>
+          data
+            .filter((obj) => obj.type === 'frameworks')
+            .sort((a, b) => a.rank - b.rank)
+        )
       );
   }
 
   getLToolSkills(): Observable<SkillsPageData[]> {
-    return this.http.get<SkillsPageData[]>(this.url)
+    return this.http
+      .get<SkillsPageData[]>(this.url)
       .pipe(
-        map(data => data.filter(obj => obj.type === 'tool'))
+        map((data) =>
+          data
+            .filter((obj) => obj.type === 'tools')
+            .sort((a, b) => a.rank - b.rank)
+        )
       );
   }
 }
