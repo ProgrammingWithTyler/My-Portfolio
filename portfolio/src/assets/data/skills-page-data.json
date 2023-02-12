@@ -14,8 +14,8 @@
     "rank": 4
   },
   {
-    "title": "TypeScript",
-    "imageSvg": "../assets/images/typescript.svg",
+    "title": "JavaScript",
+    "imageSvg": "../assets/images/javascript.svg",
     "isRelevant": true,
     "type": "languages",
     "rank": 2

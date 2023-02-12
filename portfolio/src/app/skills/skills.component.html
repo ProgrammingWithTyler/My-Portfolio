@@ -1,11 +1,13 @@
 <section class="pb-16">
-  <h1 class="text-5xl font-bold py-3 lg:px-16 tooltip lg:tooltip-bottom md:tooltip-right sm:tooltip-right"
-    data-tip="Assessing proficiency in areas of comfort">
+  <h1 class="text-6xl lg:text-3xl font-bold py-3 lg:px-8 md:px-6">
     My Skills
   </h1>
+  <h2 class="text-4xl md:text-xl lg:px-14 md:px-10 py-4">
+    Assessing proficiency in areas of comfort
+  </h2>
 
   <div *ngIf="progLang$ | async as obj">
-    <h2 class="text-4xl lg:text-3xl font-bold py-3 lg:px-24">Programming Languages</h2>
+    <h3 class="text-4xl lg:text-2xl font-bold py-3 lg:px-16">Programming Languages</h3>
     <div class="lg:grid grid-cols-7 lg:grid-cols-5 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-24">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">
@@ -22,7 +24,7 @@
   </div>
 
   <div *ngIf="frameworks$ | async as obj">
-    <h2 class="text-4xl lg:text-3xl font-bold py-3 lg:px-24">Frameworks</h2>
+    <h3 class="text-4xl lg:text-3xl font-bold py-3 lg:px-24">Frameworks</h3>
     <div class="lg:grid grid-cols-7 lg:grid-cols-5 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-24">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">
@@ -39,7 +41,7 @@
   </div>
 
   <div *ngIf="tools$ | async as obj">
-    <h2 class="text-4xl lg:text-3xl gap-4 font-bold py-3 lg:px-24">Tools</h2>
+    <h3 class="text-4xl lg:text-3xl gap-4 font-bold py-3 lg:px-24">Tools</h3>
     <div class="lg:grid grid-cols-7 lg:grid-cols-6 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-24">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">

@@ -1,0 +1,34 @@
+<section class="pb-16 max-w-fit">
+  <h1 class="text-6xl md:text-3xl font-bold py-6 lg:px-16 md:px-10">
+    My Recommendations
+  </h1>
+  <h2 class="text-4xl md:text-xl md:text-md lg:px-24 md:px-16">
+    Welcome to my Recommendations page where I share my top picks for tools, books, and extensions that I have found to
+    be
+    valuable in my development journey. Whether you are just starting out or are a seasoned developer, I believe that
+    you
+    will find my recommendations helpful in your own work. From essential Visual Studio Code extensions to insightful
+    books
+    on software development, I have carefully curated this list to provide you with the best resources for boosting your
+    productivity and knowledge. Take a look and let me know if you have any questions or would like to share your own
+    recommendations.
+  </h2>
+
+  <div class="flex justify-center justify-items-center lg:mx-16 lg:my-16">
+    <div
+      class="grid grid-cols-1 lg:grid-flow-col grid-flow-row md:grid-cols-1 lg:gap-40 lg:gap-x-36 justify-items-center lg:px-48">
+      <div class="card sm:card-side shadow-xl">
+        <div class="card-body" *ngIf="gist$ | async as obj">
+          <h2 class="card-title">Gist Files</h2>
+          <ul *ngFor="let item of obj">
+            <li>
+              <a class="link link-hover hover:text-primary" [href]="item.linkUrl" rel="noopener"
+                target="_blank">{{item.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

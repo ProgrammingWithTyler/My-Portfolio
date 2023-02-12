@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomePageService } from './shared/services/home-page.service';
 import { SkillsService } from './shared/services/skills.service';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { RecommendationsComponent } from './recommendations/recommendations.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     SkillsComponent,
     FooterComponent,
     AboutMeComponent,
+    RecommendationsComponent,
   ],
   imports: [
     BrowserModule,
