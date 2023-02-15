@@ -1,14 +1,14 @@
 <section class="pb-16">
-  <h1 class="text-6xl lg:text-3xl font-bold py-3 lg:px-8 md:px-6">
-    My Skills
+  <h1 class="lg:text-7xl md:text-4xl font-bold py-3 lg:px-8 md:px-6">
+    Welcome to my Skills page!
   </h1>
-  <h2 class="text-4xl md:text-xl lg:px-14 md:px-10 py-4">
+  <h2 class="lg:text-2xl md:text-xl lg:px-14 md:px-10 py-4">
     Assessing proficiency in areas of comfort
   </h2>
 
   <div *ngIf="progLang$ | async as obj">
-    <h3 class="text-4xl lg:text-2xl font-bold py-3 lg:px-16">Programming Languages</h3>
-    <div class="lg:grid grid-cols-7 lg:grid-cols-5 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-24">
+    <h3 class="lg:text-3xl md:text-2xl font-bold py-3 lg:px-16 md:px-6">Programming Languages</h3>
+    <div class="lg:grid lg:grid-cols-5 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-24">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">
           <h2 class="card-title">{{ item.title }}
@@ -24,7 +24,7 @@
   </div>
 
   <div *ngIf="frameworks$ | async as obj">
-    <h3 class="text-4xl lg:text-3xl font-bold py-3 lg:px-24">Frameworks</h3>
+    <h3 class="lg:text-3xl md:text-2xl font-bold py-3 lg:px-16 md:px-6">Frameworks</h3>
     <div class="lg:grid grid-cols-7 lg:grid-cols-5 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-24">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">
@@ -41,7 +41,7 @@
   </div>
 
   <div *ngIf="tools$ | async as obj">
-    <h3 class="text-4xl lg:text-3xl gap-4 font-bold py-3 lg:px-24">Tools</h3>
+    <h3 class="lg:text-3xl md:text-2xl font-bold py-3 lg:px-16 md:px-6">Tools</h3>
     <div class="lg:grid grid-cols-7 lg:grid-cols-6 gap-4 gap-x-2 gap-y-2 justify-items-center lg:px-24">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">

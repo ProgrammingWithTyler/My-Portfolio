@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { RecommendationsPageData } from '../shared/interfaces/RecommendationsPageData.interface';
+import { RecommendationsService } from './recommendations.service';
+import { RecommendationsPageData } from './RecommendationsPageData.model';
 
 @Component({
   selector: 'app-recommendations',
@@ -11,11 +12,9 @@ import { RecommendationsPageData } from '../shared/interfaces/RecommendationsPag
 export class RecommendationsComponent implements OnInit {
   gist$: Observable<RecommendationsPageData[]>;
 
-  constructor(private http: HttpClient) {}
+  constructor(private readonly service: RecommendationsService) {}
 
   ngOnInit(): void {
-    this.gist$ = this.http.get<RecommendationsPageData[]>(
-      '/assets/data/recommendations-page-data.json'
-    );
+    this.gist$ = this.service.getRecommendationsPageData();
   }
 }

@@ -7,10 +7,13 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomePageService } from './shared/services/home-page.service';
-import { SkillsService } from './shared/services/skills.service';
+import { HomePageService } from './home-page/home-page.service';
+import { SkillsService } from './skills/skills.service';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { RecommendationsService } from './recommendations/recommendations.service';
+import { ProjectsPageService } from './projects/projects-page.service';
 
 @NgModule({
   declarations: [
@@ -20,16 +23,15 @@ import { RecommendationsComponent } from './recommendations/recommendations.comp
     FooterComponent,
     AboutMeComponent,
     RecommendationsComponent,
+    ProjectsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [
     HomePageService,
-    SkillsService
+    SkillsService,
+    RecommendationsService,
+    ProjectsPageService,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

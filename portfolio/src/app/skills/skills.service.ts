@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { SkillsPageData } from '../interfaces/skills-page-data.interface';
+import { SkillsPageData } from './skills-page-data.model';
 
 @Injectable({
   providedIn: 'root',

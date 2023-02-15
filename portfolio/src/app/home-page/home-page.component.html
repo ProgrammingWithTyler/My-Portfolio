@@ -1,83 +1,56 @@
 <section class="pb-16">
-  <div class="hero min-h-fit">
+  <div class="hero">
     <div class="hero-content text-center">
-      <div class="max-w-fit">
-        <div *ngIf="obs$ | async as obj">
-          <h1 class="text-7xl font-bold py-3">{{ obj.headingText }}</h1>
-          <h2 class="lg:text-4xl md:text-md font-semibold py-3">{{ obj.subheadingText }}</h2>
-          <h2 class="lg:text-xl md:text-md pt-3 pb-10">{{ obj.subSubheadingText }}</h2>
+      <div *ngIf="obs$ | async as obj">
+        <h1 class="text-7xl font-bold py-3">{{ obj.headingText }}</h1>
+        <h2 class="lg:text-4xl md:text-md font-semibold py-3">{{ obj.subheadingText }}</h2>
+        <h2 class="lg:text-xl md:text-md pt-3 pb-10">{{ obj.subSubheadingText }}</h2>
 
-          <!-- I did this because when going with ngFor loop, the format is not what I wanted to have when I first planned this format -->
-          <div class="flex flex-col w-full lg:flex-row">
-            <div class="grid flex-grow h-10 card bg-base-300 rounded-box place-items-center">
-              {{ obj.professionalQualities[0] }}
-            </div>
-            <div class="divider lg:divider-horizontal"></div>
-            <div class="grid flex-grow h-10 card bg-base-300 rounded-box place-items-center">
-              {{ obj.professionalQualities[1] }}
-            </div>
-            <div class="divider lg:divider-horizontal"></div>
-            <div class="grid flex-grow h-10 card bg-base-300 rounded-box place-items-center">
-              {{ obj.professionalQualities[2] }}
-            </div>
+        <!-- I did this because when going with ngFor loop, the format is not what I wanted to have when I first planned this format -->
+        <div class="flex flex-col w-full lg:flex-row">
+          <div class="grid flex-grow h-10 card bg-base-300 rounded-box place-items-center">
+            {{ obj.professionalQualities[0] }}
           </div>
-
-          <!-- Next Component -->
-          <h2 class="text-4xl py-4">Latest Projects</h2>
-
-
-          <div class="lg:grid grid-cols-3 gap-4 gap-x-1 gap-y-1">
-            <div class="card sm:card-side shadow-xl">
-              <div class="card-body">
-                <h2 class="card-title">Angular To-do List App</h2>
-                <p>A to-do list app that allows users to create, update, and delete tasks.</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">See Project</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card sm:card-side shadow-xl">
-              <div class="card-body">
-                <h2 class="card-title">Angular Note Taking App</h2>
-                <p>A note-taking app that allows users to create, edit, and delete notes.</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary"><img class="pr-2" src="../assets/images/email.svg" alt="email">
-                    Contact me
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card sm:card-side shadow-xl">
-              <div class="card-body">
-                <h2 class="card-title">Angular Travel Itinerary App</h2>
-                <p>A travel itinerary app that helps users plan and organize their trips.</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">
-                    contact me <img class="pl-2" src="../assets/images/email.svg" alt="email">
-                  </button>
-                </div>
-              </div>
-            </div>
-
+          <div class="divider lg:divider-horizontal"></div>
+          <div class="grid flex-grow h-10 card bg-base-300 rounded-box place-items-center">
+            {{ obj.professionalQualities[1] }}
           </div>
-
-          <div *ngIf="relevantSkills$ | async as obj">
-            <h2 class="text-4xl py-4">Most Relevant Skills</h2>
-            <div class="lg:grid grid-cols-6 gap-8 gap-x-4 gap-y-4 justify-items-center">
-              <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
-                <div class="card-body">
-                  <h2 class="card-title">{{ item.title }}</h2>
-                  <div class="flex justify-center">
-                    <img [src]="item.imageSvg" [alt]="item.title" aria-label="Most relevant skills image">
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="divider lg:divider-horizontal"></div>
+          <div class="grid flex-grow h-10 card bg-base-300 rounded-box place-items-center">
+            {{ obj.professionalQualities[2] }}
           </div>
-
         </div>
+
+        <h2 class="text-4xl py-4">Latest Projects</h2>
+        <div *ngIf="latestProjects$ | async as obj">
+          <div class="lg:grid grid-cols-3 gap-4 gap-x-1 gap-y-1">
+            <!-- <div class="card sm:card-side shadow-xl"> -->
+            <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
+              <div class="card-body">
+                <h2 class="card-title">{{ item.projectName }}</h2>
+                <div class="card-actions justify-end">
+                  {{ item.projectDescription }}
+                  <a class="btn btn-primary" (click)="navigateToProjects()">More Info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="relevantSkills$ | async as obj">
+          <h2 class="text-4xl py-4">Most Relevant Skills</h2>
+          <div class="lg:grid grid-cols-6 gap-8 gap-x-4 gap-y-4 justify-items-center">
+            <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
+              <div class="card-body">
+                <h2 class="card-title">{{ item.title }}</h2>
+                <div class="flex justify-center">
+                  <img [src]="item.imageSvg" [alt]="item.title" aria-label="Most relevant skills image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

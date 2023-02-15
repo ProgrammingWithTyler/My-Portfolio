@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "projectName": "Lorem",
+    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
+    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
+    "isNotable": false
+  },
+  {
+    "id": 2,
+    "projectName": "Ipsum",
+    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
+    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
+    "isNotable": false
+  },
+  {
+    "id": 3,
+    "projectName": "Native",
+    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
+    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
+    "isNotable": false
+  },
+  {
+    "id": 4,
+    "projectName": "website",
+    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
+    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
+    "isNotable": false
+  },
+  {
+    "id": 5,
+    "projectName": "Portfolio",
+    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
+    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
+    "isNotable": false
+  },
+  {
+    "id": 6,
+    "projectName": "Portfolio website",
+    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
+    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
+    "isNotable": true
+  }
+]

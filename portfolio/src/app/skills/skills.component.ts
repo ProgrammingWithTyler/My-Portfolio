@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { SkillsService } from '../shared/services/skills.service';
-import { SkillsPageData } from '../shared/interfaces/skills-page-data.interface';
+import { SkillsPageData } from './skills-page-data.model';
+import { SkillsService } from './skills.service';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent implements OnInit {
   obj: SkillsPageData[];
@@ -14,8 +14,7 @@ export class SkillsComponent implements OnInit {
   frameworks$: Observable<SkillsPageData[]>;
   tools$: Observable<SkillsPageData[]>;
 
-
-  constructor(private readonly service: SkillsService) { }
+  constructor(private readonly service: SkillsService) {}
 
   ngOnInit(): void {
     this.relevantSkills$ = this.service.getMostRelevantSkills();
@@ -23,5 +22,4 @@ export class SkillsComponent implements OnInit {
     this.frameworks$ = this.service.getLFrameworkSkills();
     this.tools$ = this.service.getLToolSkills();
   }
-
 }

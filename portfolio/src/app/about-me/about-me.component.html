@@ -6,23 +6,30 @@
           <h1 class="text-7xl text-center font-bold py-2">{{ obj.headingText }}</h1>
           <p class="text-center text-lg font-normal lg:text-lg py-5">{{ obj.bodyText }}</p>
           <h2 class="text-center text-4xl font-bold py-3">Notable Projects</h2>
-          <ul *ngFor="let item of obj.notableProjects">
+          <!-- <ul *ngFor="let item of obj.notableProjects">
             <li class="text-center lg:text-lg font-normal">{{item}}</li>
-          </ul>
+          </ul> -->
+          <div *ngIf="notableProjects$ | async as obj">
+            <ul *ngFor="let item of obj">
+              <li class="text-center lg:text-lg font-normal">
+                <a class="ink link-hover hover:text-primary" routerLink="/projects">{{ this.item.projectName }}</a>
+              </li>
+            </ul>
+          </div>
           <div class="card-body items-center text-center">
             <div class="card-actions">
               <a class="btn btn-primary" [href]="obj.contactMe">
                 contact me <img class="pl-2" src="../assets/images/email.svg" alt="email">
               </a>
-              <a class="btn btn-ghost" href="https://www.youtube.com" rel="noopener" target="_blank">
+              <!-- <a class="btn btn-ghost" href="https://www.youtube.com" rel="noopener" target="_blank">
                 <img height="48" width="48" src="../assets/images/youtube.svg" alt="YouTube">
-              </a>
+              </a> -->
               <a class="btn btn-ghost" href="https://github.com/ProgrammingWithTyler" rel="noopener" target="_blank">
                 <img height="48" width="48" src="../assets/images/github.svg" alt="GitHub">
               </a>
-              <a class="btn btn-ghost" href="https://github.com/ProgrammingWithTyler" rel="noopener" target="_blank">
+              <!-- <a class="btn btn-ghost" href="https://github.com/ProgrammingWithTyler" rel="noopener" target="_blank">
                 <img height="48" width="48" src="../assets/images/medium.svg" alt="Medium">
-              </a>
+              </a> -->
             </div>
           </div>
         </div>

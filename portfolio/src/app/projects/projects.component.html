@@ -1,0 +1,31 @@
+<section class="pb-16">
+  <h1 class="lg:text-7xl md:text-4xl font-bold py-3 lg:px-8 md:px-6">
+    Welcome to my projects page!
+  </h1>
+  <h2 class="lg:text-2xl md:text-xl lg:px-14 md:px-10 py-4">
+    This is where you'll find a collection of my most notable and demanding full-stack web
+    applications. Each project features a brief description, key technologies utilized, and visual samples to give you
+    an
+    insight into my work. I strive to continuously improve and create unique solutions, so this page is regularly
+    updated
+    with my latest projects. Explore and let me know your thoughts.
+  </h2>
+
+  <div *ngIf="projects$ | async as obj">
+    <div class="lg:grid xl:grid-cols-5 lg:grid-cols-3 gap-8 gap-x-4 gap-y-4 justify-items-center lg:px-24">
+      <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
+        <div class="card-body">
+          <h2 class="card-title">{{ item.projectName }}
+            <img *ngIf="item.isNotable" src="../assets/images/star.png" alt="Relevant star" width="20" height="20"
+              aria-label="Relevant skills star image">
+          </h2>
+          <div class="card-actions justify-end">
+            {{ item.projectDescription }}
+            <a class="btn btn-primary" [href]="item.projectLink" rel="noopener" target="_blank">See Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
