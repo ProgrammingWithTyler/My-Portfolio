@@ -1,44 +1,11 @@
 [
   {
     "id": 1,
-    "projectName": "Lorem",
-    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
-    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
-    "isNotable": false
-  },
-  {
-    "id": 2,
-    "projectName": "Ipsum",
-    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
-    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
-    "isNotable": false
-  },
-  {
-    "id": 3,
-    "projectName": "Native",
-    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
-    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
-    "isNotable": false
-  },
-  {
-    "id": 4,
-    "projectName": "website",
-    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
-    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
-    "isNotable": false
-  },
-  {
-    "id": 5,
-    "projectName": "Portfolio",
-    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
-    "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
-    "isNotable": false
-  },
-  {
-    "id": 6,
     "projectName": "Portfolio website",
-    "projectDescription": "This is where I exhibit a compilation of my expertise and accomplishments in the field. This platform serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
+    "projectIntroduction": "This project serves as a showcase for my skills and various projects that demonstrate my capabilities and aptitude.",
+    "projectDescription": "Welcome to my professional portfolio website, where I present a comprehensive collection of my skills and achievements in the field. This platform serves as an exhibition of my capabilities and aptitude, showcasing various projects that demonstrate my proficiency. Utilizing Angular, RxJS, TailwindCSS, and DaisyUI (UI Component library), this project has been thoughtfully crafted to provide a seamless and engaging user experience. Among its key features are a comprehensive overview of my skill set, recommendations for essential VS Code extensions, a detailed account of my past projects, and a concise introduction to myself. Together, these elements work to convey a strong and professional image, while also serving as a testament to my dedication and expertise in the field.",
     "projectLink": "https://github.com/ProgrammingWithTyler/My-Portfolio",
-    "isNotable": true
+    "isNotable": true,
+    "projectLabels": ["Angular", "RxJS", "TailwindCSS", "DaisyUI"]
   }
 ]

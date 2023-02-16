@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.{html,js,ts}'],
+  content: ["./src/**/*.{html,js,ts}"],
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 
   // daisyUI config (optional)
@@ -11,10 +11,9 @@ module.exports = {
     logs: true,
     rtl: false,
     prefix: "",
-    darkTheme: "dark",
+    darkTheme: "dracula",
   },
-}
-
+};
 
 // module.exports = {
 //   content: ['./src/**/*.{html,js,ts}'],

@@ -6,7 +6,6 @@
         <h2 class="lg:text-4xl md:text-md font-semibold py-3">{{ obj.subheadingText }}</h2>
         <h2 class="lg:text-xl md:text-md pt-3 pb-10">{{ obj.subSubheadingText }}</h2>
 
-        <!-- I did this because when going with ngFor loop, the format is not what I wanted to have when I first planned this format -->
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow h-10 card bg-base-300 rounded-box place-items-center">
             {{ obj.professionalQualities[0] }}
@@ -24,13 +23,34 @@
         <h2 class="text-4xl py-4">Latest Projects</h2>
         <div *ngIf="latestProjects$ | async as obj">
           <div class="lg:grid grid-cols-3 gap-4 gap-x-1 gap-y-1">
-            <!-- <div class="card sm:card-side shadow-xl"> -->
             <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
               <div class="card-body">
                 <h2 class="card-title">{{ item.projectName }}</h2>
                 <div class="card-actions justify-end">
-                  {{ item.projectDescription }}
-                  <a class="btn btn-primary" (click)="navigateToProjects()">More Info</a>
+                  <p>{{ item.projectIntroduction }}</p>
+                  <label for="project-modal-{{item.id}}" class="btn btn-primary">See project</label>
+                  <button class="btn btn-ghost" (click)="navigateToProjects()">Go to project</button>
+
+                  <input type="checkbox" id="project-modal-{{item.id}}" class="modal-toggle" />
+                  <div class="modal modal-bottom sm:modal-middle">
+                    <div class="modal-box">
+                      <h3 class="font-bold lg:text-2xl sm:text-lg">{{item.projectName}}</h3>
+                      <div>
+                        <p class="py-4">{{ item.projectDescription }}</p>
+                        <div class="badge py-2" *ngFor="let label of item.projectLabels">
+                          {{ label }}
+                        </div>
+                      </div>
+                      <a [href]="item.projectLink" class="py-4 link link-hover hover:text-primary">GitHub Project
+                        Link</a>
+                      <div class="modal-action">
+                        <label for="project-modal-{{item.id}}" class="btn btn-primary" (click)="navigateToProjects()">Go
+                          to
+                          project</label>
+                        <label for="project-modal-{{item.id}}" class="btn btn-link">Close</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -44,13 +64,13 @@
               <div class="card-body">
                 <h2 class="card-title">{{ item.title }}</h2>
                 <div class="flex justify-center">
-                  <img [src]="item.imageSvg" [alt]="item.title" aria-label="Most relevant skills image">
+                  <img [src]="item.imageSvg" height="100" width="100" [alt]="item.title"
+                    aria-label="Most relevant skills image">
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

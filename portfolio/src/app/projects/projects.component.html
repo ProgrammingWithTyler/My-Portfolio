@@ -19,13 +19,15 @@
             <img *ngIf="item.isNotable" src="../assets/images/star.png" alt="Relevant star" width="20" height="20"
               aria-label="Relevant skills star image">
           </h2>
+          <div>
+            <p class="py-4">{{ item.projectIntroduction }}</p>
+            <div class="badge py-2" *ngFor="let label of item.projectLabels">{{ label }}</div>
+          </div>
           <div class="card-actions justify-end">
-            {{ item.projectDescription }}
-            <a class="btn btn-primary" [href]="item.projectLink" rel="noopener" target="_blank">See Project</a>
+            <a class="btn btn-primary" [href]="item.projectLink" rel="noopener" target="_blank">See GitHub</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </section>
