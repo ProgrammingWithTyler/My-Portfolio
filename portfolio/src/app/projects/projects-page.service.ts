@@ -18,8 +18,7 @@ export class ProjectsPageService {
         // Sort projects by id in descending order
         data.sort((a, b) => b.id - a.id);
         return data;
-      }),
-      tap(console.log)
+      })
     );
   }
 
@@ -30,8 +29,7 @@ export class ProjectsPageService {
         data.sort((a, b) => b.id - a.id);
         // Return the first three projects
         return data.slice(0, 3);
-      }),
-      tap(console.log)
+      })
     );
   }
 

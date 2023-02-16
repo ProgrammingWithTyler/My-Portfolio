@@ -1,10 +1,10 @@
-<section class="pb-16">
+<section>
   <div class="hero">
     <div class="hero-content text-center">
       <div *ngIf="obs$ | async as obj">
-        <h1 class="text-7xl font-bold py-3">{{ obj.headingText }}</h1>
-        <h2 class="lg:text-4xl md:text-md font-semibold py-3">{{ obj.subheadingText }}</h2>
-        <h2 class="lg:text-xl md:text-md pt-3 pb-10">{{ obj.subSubheadingText }}</h2>
+        <h1 class="lg:text-7xl md:text-5xl text-4xl font-bold py-1">{{ obj.headingText }}</h1>
+        <h2 class="lg:text-4xl md:text-3xl text-xl font-semibold py-1">{{ obj.subheadingText }}</h2>
+        <h2 class="lg:text-xl md:text-lg text-md font-normal py-1 pb-8">{{ obj.subSubheadingText }}</h2>
 
         <div class="flex flex-col w-full lg:flex-row">
           <div class="grid flex-grow h-10 card bg-base-300 rounded-box place-items-center">
@@ -20,9 +20,9 @@
           </div>
         </div>
 
-        <h2 class="text-4xl py-4">Latest Projects</h2>
+        <h2 class="lg:text-5xl md:text-4xl text-3xl font-normal py-4">Latest Projects</h2>
         <div *ngIf="latestProjects$ | async as obj">
-          <div class="lg:grid grid-cols-3 gap-4 gap-x-1 gap-y-1">
+          <div class="grid md:grid-cols-3 grid-cols-1 gap-4 gap-x-1 gap-y-1">
             <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
               <div class="card-body">
                 <h2 class="card-title">{{ item.projectName }}</h2>
@@ -58,8 +58,10 @@
         </div>
 
         <div *ngIf="relevantSkills$ | async as obj">
-          <h2 class="text-4xl py-4">Most Relevant Skills</h2>
-          <div class="lg:grid grid-cols-6 gap-8 gap-x-4 gap-y-4 justify-items-center">
+          <h2 class="lg:text-5xl md:text-4xl text-3xl font-normal py-4">Most Relevant Skills</h2>
+          <!-- <div class="grid lg:grid-cols-6 md:grid-cols-3 gap-8 gap-x-4 gap-y-4 justify-items-center"> -->
+          <div
+            class="lg:grid md:grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3 gap-x-1 gap-y-1 justify-items-center px-16">
             <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
               <div class="card-body">
                 <h2 class="card-title">{{ item.title }}</h2>

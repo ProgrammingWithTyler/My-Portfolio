@@ -18,8 +18,8 @@
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["./build.css"],
+            "assets": ["src/favicon.ico", "src/assets", "src/assets/build.css"],
+            "styles": [],
             "scripts": []
           },
           "configurations": {
