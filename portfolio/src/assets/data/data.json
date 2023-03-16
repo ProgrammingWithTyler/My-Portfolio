@@ -1,9 +1,0 @@
-{
-  "id": 1,
-  "name": "Licensed Frozen Hat",
-  "description": "Incidunt et magni est ut.",
-  "price": 5,
-  "imageSvg": "../assets/images/nodejs.svg",
-  "imageUrl": "../assets/images/profile.png",
-  "quantity": 1
-}

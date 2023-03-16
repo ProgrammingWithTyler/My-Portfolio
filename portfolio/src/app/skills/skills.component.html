@@ -9,7 +9,7 @@
   <div *ngIf="progLang$ | async as obj">
     <h3 class="lg:text-3xl md:text-2xl text-xl font-normal lg:px-12 md:px-8 px-6">Programming Languages</h3>
     <div
-      class="lg:grid md:grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3 gap-x-1 gap-y-1 justify-items-center px-16">
+      class="lg:grid md:grid xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-3 gap-x-1 gap-y-1 justify-items-center px-16">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">
           <h2 class="card-title">{{ item.title }}
@@ -27,7 +27,7 @@
   <div *ngIf="frameworks$ | async as obj">
     <h3 class="lg:text-3xl md:text-2xl text-xl font-normal lg:px-12 md:px-8 px-6">Frameworks</h3>
     <div
-      class="lg:grid md:grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3 gap-x-1 gap-y-1 justify-items-center px-16">
+      class="lg:grid md:grid xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-3 gap-x-1 gap-y-1 justify-items-center px-16">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">
           <h2 class="card-title">{{ item.title }}
@@ -45,7 +45,7 @@
   <div *ngIf="tools$ | async as obj">
     <h3 class="lg:text-3xl md:text-2xl text-xl font-normal lg:px-12 md:px-8 px-6">Tools</h3>
     <div
-      class="lg:grid md:grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3 gap-x-1 gap-y-1 justify-items-center px-16 md:py-4">
+      class="lg:grid md:grid xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-3 gap-x-1 gap-y-1 justify-items-center px-16 md:py-4">
       <div class="card sm:card-side shadow-xl" *ngFor="let item of obj">
         <div class="card-body">
           <h2 class="card-title">{{ item.title }}</h2>

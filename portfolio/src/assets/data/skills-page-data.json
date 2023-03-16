@@ -35,6 +35,13 @@
     "rank": 3
   },
   {
+    "title": "VB.NET",
+    "imageSvg": "../assets/images/vb-net.svg",
+    "isRelevant": false,
+    "type": "languages",
+    "rank": 4
+  },
+  {
     "title": "Oracle Apex",
     "imageSvg": "../assets/images/apex.svg",
     "isRelevant": false,
@@ -88,7 +95,14 @@
     "imageSvg": "../assets/images/sql-server.svg",
     "isRelevant": false,
     "type": "languages",
-    "rank": 4
+    "rank": 8
+  },
+  {
+    "title": "Powershell",
+    "imageSvg": "../assets/images/powershell.svg",
+    "isRelevant": false,
+    "type": "languages",
+    "rank": 9
   },
   {
     "title": "Node.js",
@@ -123,7 +137,7 @@
     "imageSvg": "../assets/images/postgresql.svg",
     "isRelevant": false,
     "type": "languages",
-    "rank": 6
+    "rank": 7
   },
   {
     "title": "GitHub",
